@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vintage Weapon Concept Research ? Winchester Model 1892</title>
+  <meta name="description" content="Comprehensive concept art research for a vintage-style weapon (Winchester Model 1892), optimized for authentic, game-ready 3D modeling." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Vintage Weapon Concept Research</h1>
+      <p class="subtitle">Focus: Winchester Model 1892 Lever?Action Rifle (Late 19th Century)</p>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="#answers">Answers</a>
+        <a href="#anatomy">Structural Anatomy</a>
+        <a href="#accuracy">Historical Accuracy</a>
+        <a href="#mechanics">Mechanical Components</a>
+        <a href="#materials">Materials & Textures</a>
+        <a href="#manufacturing">Manufacturing Techniques</a>
+        <a href="#pipeline">Game?Ready Modeling</a>
+        <a href="#references">References</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Era Selection: Late 19th Century (c. 1892)</h2>
+        <p>
+          This research centers on the <strong>Winchester Model 1892</strong>, designed by John Moses Browning and introduced in 1892.
+          It is a compact, smooth?cycling lever?action rifle chambered in pistol calibers (e.g., .44?40, .38?40), making it an iconic vintage platform with rich mechanical character and varied material treatments.
+        </p>
+      </div>
+    </section>
+
+    <section id="answers" class="card">
+      <h3>Direct Answers to Research Questions</h3>
+      <div class="qa-grid">
+        <div class="qa">
+          <h4>1) Era Explored</h4>
+          <p><strong>Late 19th century</strong>, specifically the <strong>Winchester Model 1892</strong> lever?action rifle (introduced 1892).</p>
+        </div>
+        <div class="qa">
+          <h4>2) Crucial Modeling Details</h4>
+          <ul>
+            <li>Dimensional accuracy, part segmentation for animation (lever, bolt, carrier, gate).</li>
+            <li>Clean, deformation?free topology around moving interfaces.</li>
+            <li>Realistic wear masking: edges, handling points, screw slots, loading gate.</li>
+            <li>Consistent texel density: 512?1024 px per 10 cm depending on view.</li>
+            <li>Physically plausible materials: blued steel, case?hardened steel, oiled walnut.</li>
+          </ul>
+        </div>
+        <div class="qa">
+          <h4>3) Historical Reference Sources</h4>
+          <ul>
+            <li>Museum collections and curator notes (construction, finishes, markings).</li>
+            <li>Period catalogs and exploded diagrams from reputable gunsmith sources.</li>
+            <li>Original patents and mechanical drawings by John M. Browning.</li>
+            <li>Museum?grade photography and condition reports of surviving 1892 specimens.</li>
+          </ul>
+        </div>
+        <div class="qa">
+          <h4>4) Translation to Game?Ready 3D</h4>
+          <ul>
+            <li>Modular part hierarchy for animation; bake high?poly to low?poly.</li>
+            <li>One 2K?4K PBR set for first?person; 1K?2K for third?person.</li>
+            <li>Accurate pivots, constraints, and LODs; optimized collider setup.</li>
+            <li>Smart material masks to preserve historical finish and wear patterns.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="anatomy" class="card">
+      <h3>Weapon Structural Anatomy</h3>
+      <p>
+        The Model 1892 inherits strong locking from earlier Winchester designs, scaled for pistol cartridges.
+        Core assemblies and recommended mesh splits for a riggable, game?ready asset:
+      </p>
+      <div class="two-col">
+        <div>
+          <ul class="dense">
+            <li><strong>Barrel Assembly</strong>: octagonal or round barrel variants; front sight dovetail; crown geometry.</li>
+            <li><strong>Receiver</strong>: houses bolt, dual vertical locking lugs, and carrier (lifter).</li>
+            <li><strong>Bolt</strong>: reciprocates via lever; interfaces with extractor and locking lugs.</li>
+            <li><strong>Lever</strong>: primary user interaction; drives bolt and carrier linkages.</li>
+            <li><strong>Carrier (Lifter)</strong>: raises cartridges from magazine to chamber level.</li>
+            <li><strong>Loading Gate</strong>: spring?loaded side gate feeding the tube magazine.</li>
+            <li><strong>Magazine Tube</strong>: under?barrel; cap, follower, and retaining band(s).</li>
+            <li><strong>Buttstock & Forearm</strong>: oiled walnut; buttplate (often steel) and barrel band(s).</li>
+            <li><strong>Rear Sight</strong>: buckhorn/ladder types; elevation steps, leaf spring.</li>
+            <li><strong>Small Hardware</strong>: screws, pins, springs; highly visible wear points.</li>
+          </ul>
+        </div>
+        <aside class="callout">
+          <h4>Rig?Friendly Mesh Grouping</h4>
+          <ul class="dense">
+            <li>receiver_low, barrel_low, mag_tube_low</li>
+            <li>bolt_low, lever_low, carrier_low, loading_gate_low</li>
+            <li>rear_sight_low, front_sight_low, bands_low</li>
+            <li>buttstock_low, forearm_low, buttplate_low</li>
+          </ul>
+          <p>Keep fasteners as separate meshes for convincing micro?motion and wear baking.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="accuracy" class="card">
+      <h3>Historical Design Accuracy</h3>
+      <ul>
+        <li><strong>Dimensions</strong>: overall length ~37?43 in depending on barrel; pistol calibers (e.g., .44?40).</li>
+        <li><strong>Profiles</strong>: verify barrel flats (octagonal) vs round variants; correct front sight height.</li>
+        <li><strong>Receiver Details</strong>: loading port size/shape, ejection port chamfers, screw spacing.</li>
+        <li><strong>Markings</strong>: caliber roll marks, Winchester address lines, serial placement; subtle engraving depth.</li>
+        <li><strong>Finish</strong>: early examples often color case?hardened receivers with blued barrels; later more uniform bluing.</li>
+        <li><strong>Wood</strong>: walnut grain orientation; hand?worn sheen; dents and handling polish around wrist/forearm.</li>
+      </ul>
+      <p class="note">Cross?reference at least two museum?grade sources and one period catalog photograph to confirm proportions and part relationships.</p>
+    </section>
+
+    <section id="mechanics" class="card">
+      <h3>Mechanical Component Details</h3>
+      <div class="two-col">
+        <div>
+          <h4>Cycle of Operation</h4>
+          <ol>
+            <li>Lever opens ? bolt retracts; dual lugs unlock; extractor pulls case.</li>
+            <li>Carrier drops to accept a new cartridge from magazine.</li>
+            <li>Lever closes ? carrier lifts cartridge to chamber axis.</li>
+            <li>Bolt drives forward, chambers round, lugs lock; hammer engagement.</li>
+          </ol>
+          <h4>Animation/Constraints</h4>
+          <ul class="dense">
+            <li>Lever rotates around front receiver pin; link drives bolt translation.</li>
+            <li>Carrier follows a guided arc/translation; loading gate flexes on spring.</li>
+            <li>Rear sight leaf pivots; ladder detents optional for close?up rigs.</li>
+          </ul>
+        </div>
+        <aside class="callout">
+          <h4>Topology Guardrails</h4>
+          <ul class="dense">
+            <li>Support loops at contact edges (lever/receiver, bolt/raceways).</li>
+            <li>Avoid long, thin triangles where normals will bake from tight radii.</li>
+            <li>Chamfer widths match real tool radii (0.3?1.0 mm typical).</li>
+            <li>Keep screw heads quadded for clean bake and anisotropic wear.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="materials" class="card">
+      <h3>Material Texture Characteristics</h3>
+      <div class="two-col">
+        <div>
+          <h4>Metals</h4>
+          <ul class="dense">
+            <li><strong>Blued Steel</strong>: mid?high metalness, low roughness (0.1?0.25), subtle cool tint; edge burnishing to ~0.05.</li>
+            <li><strong>Case?Hardened Steel</strong>: mottled carburation pattern; slightly higher roughness variance; thin?film color hints (very subtle).</li>
+            <li><strong>Bare Wear</strong>: brightened edges on lever, loading gate lip, screw slots; directional micro?scratches.</li>
+          </ul>
+          <h4>Wood</h4>
+          <ul class="dense">
+            <li><strong>Oiled Walnut</strong>: anisotropic grain; roughness 0.35?0.55 with hand?polished low?R streaks.</li>
+            <li>Compression dents at sling/band contact; finish thin at high?touch zones.</li>
+          </ul>
+        </div>
+        <aside class="callout">
+          <h4>Wear Masking Map Stack</h4>
+          <ul class="dense">
+            <li>Curvature?based edge highlight (soft threshold).</li>
+            <li>AO?modulated grime in undercuts (receiver flats, screw heads).</li>
+            <li>Directional handling polish on lever underside and wrist.</li>
+            <li>Dust in sight steps and wood pores (very subtle normal noise).</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="manufacturing" class="card">
+      <h3>Manufacturing Technique Representations</h3>
+      <ul>
+        <li><strong>Forging & Milling</strong>: reflect historical toolpaths with consistent chamfers and fillets; avoid CNC?sharp features.</li>
+        <li><strong>Color Case Hardening</strong>: replicate irregular blotches along flats/edges; keep saturation restrained.</li>
+        <li><strong>Bluing</strong>: uniform but shows thinness at high edges; include heat?tint near muzzle from repeated firing (optional).</li>
+        <li><strong>Hand?Fitting Marks</strong>: faint draw?file or stoning patterns on internal, seldom?seen surfaces.</li>
+        <li><strong>Wood Finishing</strong>: pore?filled but not glassy; end?grain slightly darker and rougher.</li>
+      </ul>
+    </section>
+
+    <section id="pipeline" class="card">
+      <h3>Game?Ready 3D Modeling Pipeline</h3>
+      <div class="pipeline-grid">
+        <div class="step">
+          <h4>1) References & Scale</h4>
+          <ul class="dense">
+            <li>Collect orthographic museum photos; align to consistent DPI; set real?world scale.</li>
+            <li>Establish master measurements (barrel length, receiver width, sight heights).</li>
+          </ul>
+        </div>
+        <div class="step">
+          <h4>2) High?Poly</h4>
+          <ul class="dense">
+            <li>Model manufacturable bevels (tool radius real?world plausible).</li>
+            <li>Boolean then remesh/polish for clean bake?ready surfaces.</li>
+          </ul>
+        </div>
+        <div class="step">
+          <h4>3) Low?Poly</h4>
+          <ul class="dense">
+            <li>Target tris: FP 35?55k; TP 12?25k (variant?dependent).</li>
+            <li>Split moving parts; maintain silhouette on barrel/receiver fillets.</li>
+          </ul>
+        </div>
+        <div class="step">
+          <h4>4) UVs</h4>
+          <ul class="dense">
+            <li>Texel density: FP 1024 px / 10 cm; TP 512 px / 10 cm.</li>
+            <li>Seams along hard edges and shadow lines; pack by part priority.</li>
+          </ul>
+        </div>
+        <div class="step">
+          <h4>5) Baking</h4>
+          <ul class="dense">
+            <li>MikkTSpace; cage with 1?2 mm offset; anti?alias ?2?4.</li>
+            <li>Name matching for part?specific bakes (e.g., _high/_low suffix).</li>
+          </ul>
+        </div>
+        <div class="step">
+          <h4>6) Texturing</h4>
+          <ul class="dense">
+            <li>PBR metal/rough; blued steel base, layered oxide tints, restrained edge polish.</li>
+            <li>Wood: scanned walnut base, pore detail normal, oil sheen gradient from handling.</li>
+          </ul>
+        </div>
+        <div class="step">
+          <h4>7) Rig & Animation</h4>
+          <ul class="dense">
+            <li>Set accurate pivots (lever pin, sight leaf, loading gate flex).</li>
+            <li>Author firing/reload cycles; integrate with IK hand targets.</li>
+          </ul>
+        </div>
+        <div class="step">
+          <h4>8) LODs & Integration</h4>
+          <ul class="dense">
+            <li>LOD1 ~50?60% tris; LOD2 ~25?35% tris; collapse micro fasteners.</li>
+            <li>Collision: compound boxes for receiver/barrel; narrow capsule for lever.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="references" class="card">
+      <h3>Historical References</h3>
+      <ul>
+        <li><a href="https://centerofthewest.org/explore/firearms/" target="_blank" rel="noopener">Cody Firearms Museum ? Winchester collections</a></li>
+        <li><a href="https://royalarmouries.org/collection/" target="_blank" rel="noopener">Royal Armouries ? Digital Collection</a></li>
+        <li><a href="https://www.google.com/patents" target="_blank" rel="noopener">Google Patents ? John M. Browning lever?action patents</a></li>
+        <li><a href="https://www.gunpartscorp.com/" target="_blank" rel="noopener">Gun Parts Corp (Numrich) ? Exploded views and parts diagrams</a></li>
+        <li><a href="https://archive.org/" target="_blank" rel="noopener">Internet Archive ? Period catalogs and manuals</a></li>
+      </ul>
+      <p class="note">Use at least two independent sources for each contested measurement or profile, prioritizing museum curation over secondary websites.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>? Vintage Weapon Research ? Winchester Model 1892. Built for production?ready game asset workflows.</p>
+    </div>
+  </footer>
+
+  <script src="./assets/script.js" defer></script>
+</body>
+</html>
